@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <div class="logo"><span>myfitnesspal <span style="font-size: xx-small; position: relative; x: 0;">&#174;</span></span></div>
+    <div class="logo">myfitnesspal<sup><span style="font-size: xx-small; position: relative; x: 0;">&#174;</span></sup></></div>
     <div class="user-icon">
       <svg
         width="24"
@@ -35,19 +35,20 @@
     </div>
   </header>
 
-  <section>
+  <section id="navbar-section">
     <div class="top-bar">
       Our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> have recently been updated
     </div>
+
     <nav class="nav">
-      <button class="nav-button active">Reviews</button>
-      <button class="nav-button">How It Works</button>
-      <button class="nav-button">Apps</button>
-      <button class="nav-button">Our Philosophy</button>
+      <a href="#rating-section"><button class="nav-button active">Reviews</button></a>
+      <a href="#goals-section"><button class="nav-button">How It Works</button></a>
+      <a href="#sync-section"><button class="nav-button">Apps</button></a>
+      <a href="#philosophy-section"><button class="nav-button">Our Philosophy</button></a>
     </nav>  
   </section>
 
-  <section>
+  <section id="hero-section">
     <div class="hero">
       <div class="hero-text">
         <h4>#1 nutrition tracking app</h4>
@@ -64,8 +65,8 @@
     </div>
   </section>
 
-  <section class="container testimonial">
-    <div class="testimonial-content">
+  <section id="rating-section">
+    <div class="rating-content">
       <div class="stars">★★★★★</div>
       <h2>3.5 Million 5-Star Ratings</h2>
       <p class="quote">“Good for tracking calories and macros with a huge database of food.”</p>
@@ -81,11 +82,11 @@
     </div>
   </section>
     
-  <section class="container goals-section">
+  <section id="goals-section">
     <h2>Hit your health goals in 1-2-3</h2>
 
     <div class="goal-step">
-      <img src="https://placehold.co/600x400?text=Track+Calories" alt="Track calories screen" class="goal-img">
+      <img src="https://placehold.co/576x486?text=Track+Calories" alt="Track calories screen" class="goal-img">
       <div class="goal-text">
         <h3><span class="step-number">1</span> Track calories, macros & more</h3>
         <p>Log even faster with tools like barcode scan & the NEW voice log.</p>
@@ -93,7 +94,7 @@
     </div>
 
     <div class="goal-step reverse">
-      <img src="https://placehold.co/600x400?text=Follow+Progress" alt="Progress tracking screen" class="goal-img">
+      <img src="https://placehold.co/576x486?text=Follow+Progress" alt="Progress tracking screen" class="goal-img">
       <div class="goal-text">
         <h3><span class="step-number">2</span> Follow your progress</h3>
         <p>Forget perfection. This is about building long-term habits—and enjoying the journey.</p>
@@ -101,7 +102,7 @@
     </div>
 
     <div class="goal-step">
-      <img src="https://placehold.co/600x400?text=Eat+Better" alt="Meal planner screen" class="goal-img">
+      <img src="https://placehold.co/576x486?text=Eat+Better" alt="Meal planner screen" class="goal-img">
       <div class="goal-text">
         <h3><span class="step-number">3</span> Eat better and hit your goals</h3>
         <p>Learn which foods help you feel your best, and get tailored weekly meal plans!</p>
@@ -109,116 +110,161 @@
     </div>
   </section>
 
-  <section class="container sync-section">
-    <div class="sync-content">
-      <h4>35+ apps and devices</h4>
-      <h2>Sync steps, weight, workouts & more</h2>
-    </div>
-    <div class="sync-icons">
-      <img src="https://placehold.co/600x400?text=Sync+Apps" alt="Sync icons grid">
-    </div>
-  </section>
-
-  <section class="container quote">
-    <div>
-        <p class="quote-text">If it's edible, it's in here</p>
-        <p class="quote-author">Track over 20 million global foods</p>
-    </div>
-  </section>
-
-  <section class="container testimonial-grid">
-    <h4>Get Results</h4>
-    <h2>Nutrition tracking works,<br>here's the proof</h2>
-
-    <div class="testimonial-grid-wrapper">
-      <div class="testimonial-images left">
-        <img src="https://placehold.co/100x100" alt="User 1">
-        <img src="https://placehold.co/100x100" alt="User 2">
-        <img src="https://placehold.co/100x100" alt="User 3">
-        <img src="https://placehold.co/100x100" alt="User 4">
-        <img src="https://placehold.co/100x100" alt="User 5">
-        <img src="https://placehold.co/100x100" alt="User 6">
+  <section id="sync-section">
+    <div class="sync-container">
+      <div class="sync-content">
+        <h4>35+ apps and devices</h4>
+        <h2>Sync steps, weight, workouts & more</h2>
       </div>
+      <div class="sync-icons">
+        <img src="https://placehold.co/600x400?text=Sync+Apps" alt="Sync icons grid">
+      </div>
+    </div>
+  </section>
 
-      <div class="testimonial-text">
+  <section id="quote-section">
+    <div>
+      <p><svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M20 5H4V19H20V5ZM4 3C2.89543 3 2 3.89543 2 5V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V5C22 3.89543 21.1046 3 20 3H4Z"
+          fill="currentColor"
+        />
+        <path
+          d="M9.06723 9.19629H12.0672L9.93267 14.8038H6.93267L9.06723 9.19629Z"
+          fill="currentColor"
+        />
+        <path
+          d="M14.0672 9.19629H17.0672L14.9327 14.8038H11.9327L14.0672 9.19629Z"
+          fill="currentColor"
+        />
+      </svg></p>
+      <h1>If it's edible, it's in here</>
+      <h2>Track over 20 million global foods</h2>
+    </div>
+  </section>
+
+  <section id="testimonial-grid">
+    <div>
+      <h4>Get Results</h4>
+      <h2>Nutrition tracking works,<br>here's the proof</h2>
+
+      <div class="testimonial-grid-wrapper">
+        <div class="testimonial-images left">
+          <img src="https://placehold.co/15x20" alt="User 1">
+          <img src="https://placehold.co/15x20" alt="User 2">
+          <img src="https://placehold.co/15x20" alt="User 3">
+          <img src="https://placehold.co/15x20" alt="User 4">
+          <img src="https://placehold.co/15x20" alt="User 5">
+          <img src="https://placehold.co/15x20" alt="User 6">
+        </div>
+
+        <div class="testimonial-text">
+          <p class="quote">
+            <strong>“I love the connection, I love the encouragement.”</strong>
+            <br>And when I show my before and after pictures, people are astonished — that's such an awesome feeling!
+          </p>
+          <p class="author">Tamiko G.</p>
+          <div class="carousel-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="testimonial-images right">
+          <img src="https://placehold.co/15x20" alt="User 7">
+          <img src="https://placehold.co/15x20" alt="User 8">
+          <img src="https://placehold.co/15x20" alt="User 9">
+          <img src="https://placehold.co/15x20" alt="User 10">
+          <img src="https://placehold.co/15x20" alt="User 11">
+          <img src="https://placehold.co/15x20" alt="User 12">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz-section">
+    <div class="quiz-left">
+        <p class="quiz-top">Get Started</p>
+        <p class="quiz-main"><span>Starting is the hard part.</span> We make it easy...</p>
+        <button class="cta-button">take the quiz &gt;</button>
+    </div>
+    <div class="quiz-right">
+      <img src="https://placehold.co/320x458" alt="quiz" />
+    </div>
+  </section>
+
+  <section id="philosophy-section">
+    <div class="phil-left">
+      <div class="side-img">
+        <img src="https://placehold.co/110x180" alt="Running stairs" />
+      </div>
+      
+      <div class="center-img">
+        <div class="person">
+          <img src="https://placehold.co/230x360" alt="Stephanie Nelson" />
+          <div class="label">
+            <p class="name">Stephanie Nelson</p>
+            <p class="title">MyFitnessPal Registered Dietitian</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="side-img">
+        <img src="https://placehold.co/110x180" alt="Running stairs" />
+      </div>
+    </div>
+
+    <div class="phil-right">
+      <div class="text-content">
+        <p class="subheading">Our Philosophy</p>
+        <h1>Knowledge is power</h1>
         <p class="quote">
-          <strong>“I love the connection, I love the encouragement.”</strong>
-          <br>And when I show my before and after pictures, people are astonished — that's such an awesome feeling!
+          “Studies show people who keep a food diary are more likely to hit their goals. MyFitnessPal simplifies nutrition and calorie tracking, provides the data you want, and helps you make sense of it all.
         </p>
-        <p class="author">Tamiko G.</p>
-        <div class="carousel-dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-
-      <div class="testimonial-images right">
-        <img src="https://placehold.co/100x100" alt="User 7">
-        <img src="https://placehold.co/100x100" alt="User 8">
-        <img src="https://placehold.co/100x100" alt="User 9">
-        <img src="https://placehold.co/100x100" alt="User 10">
-        <img src="https://placehold.co/100x100" alt="User 11">
-        <img src="https://placehold.co/100x100" alt="User 12">
-      </div>
-    </div>
-  </section>
-
-  <section class="container">
-    <div>
-        <p class="quote-text">Get Started</p>
-        <p class="quote-author">Starting is the hard part. We make it easy...</p>
-        <button>take the quiz &gt;</button>
-    </div>
-  </section>
-
-  <section class="container philosophy">
-    <div class="image-left">
-      <img src="https://placehold.co/600x400" alt="Running stairs" />
-    </div>
-    
-    <div class="main-content">
-      <div class="person">
-        <img src="https://placehold.co/600x400" alt="Stephanie Nelson" />
-        <div class="label">
-          <p class="name">Stephanie Nelson</p>
-          <p class="title">MyFitnessPal Registered Dietitian</p>
-        </div>
+        <p class="quote">
+          Healthy eating is a continuous journey of self-discovery. And the more you track, the more empowered you’ll become to make healthy choices that support your goals.”
+        </p>
+        <p class="credit">
+          Stephanie Nelson, MyFitnessPal Registered Dietitian
+        </p>
       </div>
     </div>
 
-    <div class="text-content">
-      <p class="subheading">Our Philosophy</p>
-      <h1>Knowledge is power</h1>
-      <p class="quote">
-        “Studies show people who keep a food diary are more likely to hit their goals. MyFitnessPal simplifies nutrition and calorie tracking, provides the data you want, and helps you make sense of it all.
-      </p>
-      <p class="quote">
-        Healthy eating is a continuous journey of self-discovery. And the more you track, the more empowered you’ll become to make healthy choices that support your goals.”
-      </p>
-      <p class="credit">
-        Stephanie Nelson, MyFitnessPal Registered Dietitian
-      </p>
-    </div>
+  </section>
 
-    <div class="image-right">
-      <img src="https://placehold.co/600x400" alt="Healthy food" />
+  <section id="customers-section">
+    <div class="customer-heading">As seen in...</div>
+    <div class="customer-logo">
+      <img src="https://placehold.co/150x100" alt="" />
+      <img src="https://placehold.co/150x100" alt="" />
+      <img src="https://placehold.co/150x100" alt="" />
+      <img src="https://placehold.co/150x100" alt="" />
+      <img src="https://placehold.co/150x100" alt="" />
+      <img src="https://placehold.co/150x100" alt="" />
+      <img src="https://placehold.co/150x100" alt="" />
     </div>
   </section>
 
-  <section class="customers"></section>
+  <section id="faq-section"></section>
 
-  <section class="faq"></section>
+  <section id="blogs-section"></section>
 
-  <section class="blogs"></section>
-
-  <section class="about"></section>
+  <section id="about-section"></section>
 
   <footer>
     myfitnesspal &copy;<br />
