@@ -787,7 +787,7 @@ h1 {
 }
 
 .footer {
-	background-color: #11131a;
+	background-color: #151824;
 	color: #fff;
 	padding: 60px 20px;
 }
@@ -795,6 +795,7 @@ h1 {
 .footer-container {
 	max-width: 1100px;
 	margin: 0 auto;
+    margin-bottom: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -833,7 +834,7 @@ h1 {
 .footer-links {
 	display: flex;
 	gap: 40px;
-	flex: 2 1 600px;
+	flex: 2 1 1;
 	flex-wrap: wrap;
 }
 
@@ -862,3 +863,39 @@ h1 {
 .column ul li a:hover {
 	color: #fff;
 }
+
+.footer-links {
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-socials img {
+    border-radius: 50%;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+  
