@@ -11,7 +11,7 @@ This repo contains pixel-perfect clones with added interactive features. Deploye
 | Clone Name         | My Clone URL | Original Website | Wayback Machine Snapshot |
 |--------------------|--------------|------------------|---------------------------|
 | MyFitnessPal Clone | [View Clone](https://shivankursharma018github.io/pixel-plus/my-fitness-pal) | [myfitnesspal.com](https://www.myfitnesspal.com/) | [Snapshot](https://web.archive.org/web/20250410071203/https://www.myfitnesspal.com/) |
-| Quizlet Clone      | [View Clone](#) | [quizlet.com](https://quizlet.com/) | [Snapshot](https://web.archive.org/web/20240410071203/https://quizlet.com/) |
+| Quizlet Clone      | [View Clone](https://shivankursharma018github.io/pixel-plus/quizlet) | [quizlet.com](https://quizlet.com/) | [Snapshot](https://web.archive.org/web/20240410071203/https://quizlet.com/) |
 
 ---
 
@@ -19,6 +19,11 @@ This repo contains pixel-perfect clones with added interactive features. Deploye
 **Feature Added**:
 - BMR Calculator: Allows users to calculate their Basal Metabolic Rate based on age, weight, height, and gender.
 - Sticky Header: The header stays at the top while scrolling.
+
+## Quizlet Clone
+**Feature Added**: 
+- Added UI changes to carousel
+- Added UI changes to flashcards
 
 ---
 
@@ -34,4 +39,5 @@ This repo contains pixel-perfect clones with added interactive features. Deploye
 
 ---
 
+Website list - [here](https://docs.google.com/document/d/1smmL74_PG7z8vskWcjXG9nZJmebSbM51Xi99U6niIXM/)
 MIT License - [Learn More](https://opensource.org/licenses/MIT)
