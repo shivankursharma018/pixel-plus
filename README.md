@@ -10,8 +10,8 @@ This repo contains pixel-perfect clones with added interactive features. Deploye
 
 | Clone Name         | My Clone URL | Original Website | Wayback Machine Snapshot |
 |--------------------|--------------|------------------|---------------------------|
-| MyFitnessPal Clone | [View Clone](https://shivankursharma018github.io/pixel-plus/my-fitness-pal) | [myfitnesspal.com](https://www.myfitnesspal.com/) | [Snapshot](https://web.archive.org/web/20250410071203/https://www.myfitnesspal.com/) |
-| Quizlet Clone      | [View Clone](https://shivankursharma018github.io/pixel-plus/quizlet) | [quizlet.com](https://quizlet.com/) | [Snapshot](https://web.archive.org/web/20240410071203/https://quizlet.com/) |
+| MyFitnessPal Clone | [View Clone](https://shivankursharma018.github.io/pixel-plus/my-fitness-pal) | [myfitnesspal.com](https://www.myfitnesspal.com/) | [Snapshot](https://web.archive.org/web/20250410071203/https://www.myfitnesspal.com/) |
+| Quizlet Clone      | [View Clone](https://shivankursharma018.github.io/pixel-plus/quizlet) | [quizlet.com](https://quizlet.com/) | [Snapshot](https://web.archive.org/web/20240410071203/https://quizlet.com/) |
 
 ---
 
