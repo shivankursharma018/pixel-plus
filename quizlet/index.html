@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizlet: Study Tools & Learning Resources for Students and Teachers | Quizlet</title>
+    <link href="https://assets.quizlet.com/_next/static/media/q-twilight.e27821d9.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://db.onlinewebfonts.com/c/bc02c22ad2b5cc86dd6b8ae8761c596f?family=HurmeGeometricSansNoTwo-SemiBol" rel="stylesheet" type="text/css"/>
+      
+    <style>
+
+:root {
+    --quizlet-primary: #4255FF;
+    --quizlet-dark: #303545;
+    --quizlet-light-gray: #f6f7fb;
+    --quizlet-gray: #646F90;
+    --quizlet-purple: #8358E8;
+    --quizlet-pink: #FFBDBD;
+    --quizlet-yellow: #FFDC62;
+    --quizlet-green: #66CC8A;
+}
+
+@font-face {
+    font-family: 'HurmeGeoSansNo2';
+    src: url('https://assets.quizlet.com/_next/static/media/hurmegeosans-no2-400.70b8c5c1.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+::selection {
+    background-color: #DBDFF8;
+    color: inherit;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HurmeGeometricSansNoTwo-SemiBol";
+    color: var(--quizlet-dark);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.font-bold {
+    font-weight: 900;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-primary {
+    color: var(--quizlet-primary);
+}
+
+.text-gray {
+    color: var(--quizlet-gray);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-primary {
+    background-color: var(--quizlet-primary);
+}
+
+.bg-light-gray {
+    background-color: var(--quizlet-light-gray);
+}
+
+.bg-purple {
+    background-color: var(--quizlet-purple);
+}
+
+.bg-pink {
+    background-color: var(--quizlet-pink);
+}
+
+.bg-yellow {
+    background-color: var(--quizlet-yellow);
+}
+
+.bg-green {
+    background-color: var(--quizlet-green);
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.border {
+    border: 1px solid #e5e7eb;
+}
+
+.border-t {
+    border-top: 1px solid #e5e7eb;
+}
+
+.border-b {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mr-1 {
+    margin-right: 0.25rem;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.mr-4 {
+    margin-right: 1rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+/* header styles */
+
+.header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.75rem 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--quizlet-primary);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 8px 12px;
+}
+
+.search-bar input {
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: var(--quizlet-light-gray);
+}
+
+.search-bar i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translate(100%, -50%);
+    color: var(--quizlet-gray);
+}
+
+/* button styles */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 0.9375rem;
+}
+
+.btn-primary {
+    background-color: var(--quizlet-primary);
+    color: white;
+    border-radius: 12.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #3246e2;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--quizlet-primary);
+    border: 1px solid var(--quizlet-primary);
+}
+
+.btn-outline:hover {
+    background-color: rgba(66, 85, 255, 0.05);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--quizlet-primary);
+    border: 1px solid #e5e7eb;
+}
+
+.btn-secondary:hover {
+    border-color: var(--quizlet-primary);
+}
+
+.btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* study options cards */
+.study-option-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.study-guides-card {
+    background-color: var(--quizlet-pink);
+}
+
+.flashcards-card {
+    background-color: var(--quizlet-primary);
+}
+
+.practice-tests-card {
+    background-color: var(--quizlet-yellow);
+}
+
+.expert-solutions-card {
+    background-color: var(--quizlet-green);
+}
+
+.card-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* navigation arrows */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: -20px;
+}
+
+.next-btn {
+    right: -20px;
+}
+
+/* app store badges */
+.app-promo-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.app-promo-main-reverse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.app-promo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 40%;
+}
+
+.app-promo-img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+    width: 40%;
+}
+
+.app-store-badge {
+    margin-right: 1rem;
+}
+
+/* grid system */
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* flashcard set cards */
+.flashcard-sets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.flashcard-set {
+    min-height: 10.5rem;
+    max-width: 18.5rem;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.flashcard-set:hover {
+    border-bottom: 4px solid #b296fff0;
+}
+
+.creator-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.creator-badge img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.set-item-count {
+    padding: 0px 8px;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    color: var(--quizlet-gray);
+    background-color: #DBDFFF;
+    font-size: 0.75rem;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.page-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+}
+
+.page-dot.active {
+    background-color: var(--quizlet-primary);
+}
+
+/* footer */
+footer {
+    padding: 3rem 0 1rem;
+    font-size: 0.875rem;
+}
+
+.footer-heading {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: var(--quizlet-gray);
+    margin-bottom: 0.5rem;
+    display: block;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--quizlet-primary);
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.bottom-footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.bottom-footer-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    color: var(--quizlet-gray);
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: var(--quizlet-primary);
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="logo mr-4">Quizlet</a>
+                    <div class="header-nav ml-4">
+                        <button>
+                            <a href="#" class="mr-4 text-sm font-medium">Study tools</a>
+                            <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z"
+                                fill="currentColor"
+                            />
+                            </svg>
+                        </button>
+
+                        <button>
+                            <a href="#" class="mr-4 text-sm font-medium">Subjects</a>
+                            <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z"
+                                fill="currentColor"
+                            />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="search-bar mx-4">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Find it faster with a search">
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="#" class="create-btn btn text-primary mr-2 desktop-only">
+                        <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z"
+                            fill="currentColor"
+                        />
+                        </svg>
+                        Create</a>
+                    <a href="#" class="btn btn-primary">Log in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="py-12 bg-light-gray">
+            <div class="container text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2">How do you want to study?</h1>
+                <p class="text-gray mb-6">Master whatever you're learning with Quizlet's interactive flashcards, practice tests, and study activities.</p>
+                <a href="#" class="btn btn-primary mb-4">Sign up for free</a>
+                <p class="text-sm"><a href="#" class="text-primary">I'm a teacher</a></p>
+            </div>
+            
+            <!-- carousel -->
+            <div class="container relative mt-8">
+                <div class="card-carousel">
+
+                    <div class="study-option-card study-guides-card" style="min-width: 280px;">
+                        <h3 class="text-lg text-center font-bold mb-2">Study Guides</h3>
+                        <div class="p-3 bg-white rounded-lg mb-4">
+                            <img src="https://placehold.co/300x300" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="study-option-card flashcards-card" style="min-width: 280px;">
+                        <h3 class="text-lg text-center font-bold mb-2 text-white">Flashcards</h3>
+                        <div class="bg-white rounded-lg p-4" style="min-height: 180px;">
+                            <img src="https://placehold.co/300x300" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="study-option-card practice-tests-card" style="min-width: 280px;">
+                        <h3 class="text-lg text-center font-bold mb-2">Practice Tests</h3>
+                        <div class="bg-white rounded-lg p-4" style="min-height: 180px;">
+                            <img src="https://placehold.co/300x300" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="study-option-card expert-solutions-card" style="min-width: 280px;">
+                        <h3 class="text-lg text-center font-bold mb-2">Expert Solutions</h3>
+                        <div class="bg-white rounded-lg p-4" style="min-height: 180px;">
+                            <img src="https://placehold.co/300x300" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- navigation arrows -->
+                <button class="carousel-nav prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- app promo section -->
+        <section class="py-12">
+            <div class="container">
+                <div class="app-promo-main">
+                    <div class="app-promo-text">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Every class, every test, one ultimate study app</h2>
+                        <p class="text-gray mb-6">Create your own flashcards or find sets made by teachers, students, and experts. Study them anytime, anywhere with our free app.</p>
+                        <div>
+                            <a href="#" class="mr-4 mb-4">
+                                <img src="https://placehold.co/100x50" alt="Download on the App Store" class="app-store-badge">
+                            </a>
+                            <a href="#">
+                                <img src="https://placehold.co/100x50" alt="Get it on Google Play" class="app-store-badge">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-promo-img text-center">
+                        <img src="https://placehold.co/400x300" alt="Quizlet App">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-12">
+            <div class="container">
+                <div class="app-promo-main-reverse">
+                    <div class="app-promo-img">
+                        <img src="https://placehold.co/400x300" alt="Study Material">
+                    </div>
+                    <div class="app-promo-text">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Make class material instantly studiable</h2>
+                        <p class="text-gray mb-6">Turn your slides, videos, and notes into flashcard sets, practice tests, and study guides.</p>
+                        <a href="#" class="btn btn-primary">Try it out</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-12">
+            <div class="container">
+                <div class="app-promo-main">
+                    <div class="app-promo-text">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Test prep for any subject</h2>
+                        <p class="text-gray mb-6">Memorize anything with personalized practice tests and study sessions in Learn. 95% of students say Quizlet has improved their understanding.</p>
+                        <a href="#" class="btn btn-primary">Get started</a>
+                    </div>
+                    <div class="app-promo-img text-center">
+                        <img src="https://placehold.co/400x300" alt="Test Prep">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-12" style="background-color: #DBDFFF;">
+            <div class="container">
+                <div class="app-promo-main">
+                    <div class="app-promo-text">
+                        <h3>TEACHERS</h3>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Empower your students</h2>
+                        <p class="text-gray mb-6">Help every student confidently learn anything. With free flashcard sets, study modes, and in-class games like Quizlet Live, you can instantly create a more engaged classroom.</p>
+                        <a href="#" class="btn btn-primary">Sign up as a teacher</a>
+                        <a href="#" class="btn text-primary">See how teachers use Quizlet</a>
+                    </div>
+                    <div class="app-promo-img text-center">
+                        <img src="https://placehold.co/450" alt="Test Prep" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular flashcard sets -->
+        <section class="py-12 bg-light-gray">
+            <div class="container">
+                <h2 class="text-xl font-bold mb-6">Popular flashcard sets</h2>
+                
+                <div class="flashcard-sets">
+
+                    <div class="flashcard-set">
+                        <h3 class="font-bold mb-1">WoW #13 (10th grade Spring 2025)</h3>
+                        <p class="set-item-count">15 terms</p>
+                        <div class="creator-badge">
+                            <img src="https://placehold.co/50x50" alt="Creator">
+                            <span class="text-sm">sara_osmus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-set">
+                        <h3 class="font-bold mb-1">9th Grade Lit Vocab List 3</h3>
+                        <p class="set-item-count">10 terms</p>
+                        <div class="creator-badge">
+                            <img src="https://placehold.co/50x50" alt="Creator">
+                            <span class="text-sm">kinley_bartlett</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-set">
+                        <h3 class="font-bold mb-1">Vocab #3 Review (OMM)</h3>
+                        <p class="set-item-count">20 terms</p>
+                        <div class="creator-badge">
+                            <img src="https://placehold.co/50x50" alt="Creator">
+                            <span class="text-sm">Megan_Vo919</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-set">
+                        <h3 class="font-bold mb-1">WoW #13 (10th grade Spring 2025)</h3>
+                        <p class="set-item-count">15 terms</p>
+                        <div class="creator-badge">
+                            <img src="https://placehold.co/50x50" alt="Creator">
+                            <span class="text-sm">sara_osmus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-set">
+                        <h3 class="font-bold mb-1">9th Grade Lit Vocab List 3</h3>
+                        <p class="set-item-count">10 terms</p>
+                        <div class="creator-badge">
+                            <img src="https://placehold.co/50x50" alt="Creator">
+                            <span class="text-sm">kinley_bartlett</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-set">
+                        <h3 class="font-bold mb-1">Vocab #3 Review (OMM)</h3>
+                        <p class="set-item-count">20 terms</p>
+                        <div class="creator-badge">
+                            <img src="https://placehold.co/50x50" alt="Creator">
+                            <span class="text-sm">Megan_Vo919</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <div class="pagination">
+                        <button class="ml-2">
+                            <i class="fas fa-chevron-left mr-2"></i>
+                        </button>
+                        <span>1/3</span>
+                        <button>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer class="footer bg-light-gray py-8">
+        <div class="container">
+            <div class="upper-footer flex flex-wrap justify-between">
+
+                <!-- about section -->
+                <div>
+                    <h4 class="footer-heading">About us</h4>
+                    <a href="#" class="footer-link">About Quizlet</a>
+                    <a href="#" class="footer-link">How Quizlet works</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Advertise with us</a>
+                    <a href="#" class="footer-link">Quizlet Plus</a>
+                    <a href="#" class="footer-link">Study Guides</a>
+                    <a href="#" class="footer-link">Promotion terms</a>
+                </div>
+                
+                <!-- for students -->
+                <div>
+                    <h4 class="footer-heading">For students</h4>
+                    <a href="#" class="footer-link">Flashcards</a>
+                    <a href="#" class="footer-link">Test</a>
+                    <a href="#" class="footer-link">Learn</a>
+                    <a href="#" class="footer-link">Dictionary</a>
+                    <a href="#" class="footer-link">Solutions</a>
+                    <a href="#" class="footer-link">Textbook solutions</a>
+                </div>
+                
+                <!-- for teachers -->
+                <div>
+                    <h4 class="footer-heading">For teachers</h4>
+                    <a href="#" class="footer-link">Live</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Be the Change</a>
+                    <a href="#" class="footer-link">Quizlet Plus for teachers</a>
+                </div>
+                
+                <!-- resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <a href="#" class="footer-link">Help center</a>
+                    <a href="#" class="footer-link">Sign up</a>
+                    <a href="#" class="footer-link">Honor code</a>
+                    <a href="#" class="footer-link">Community guidelines</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Ad and Cookie Policy</a>
+                    <a href="#" class="footer-link">Quizlet for Schools</a>
+                    <a href="#" class="footer-link">Parents</a>
+                </div>
+                
+                <!-- language -->
+                <div>
+                    <h4 class="footer-heading">Language</h4>
+                    <div class="flex items-center">
+                        <span class="footer-link">English (USA)</span>
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="mb-2 font-medium">Get the app</h5>
+                        <img src="https://placehold.co/100x130" alt="QR Code" class="rounded-lg qr-code">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- country selection -->
+            <div class="mt-8 mb-6">
+                <h4 class="footer-heading mb-4">Country</h4>
+                <div class="flex flex-wrap mb-8 gap-4">
+                    <a href="#" class="footer-link">United States</a>
+                    <a href="#" class="footer-link">Canada</a>
+                    <a href="#" class="footer-link">United Kingdom</a>
+                    <a href="#" class="footer-link">Australia</a>
+                    <a href="#" class="footer-link">New Zealand</a>
+                    <a href="#" class="footer-link">Germany</a>
+                    <a href="#" class="footer-link">France</a>
+                    <a href="#" class="footer-link">Spain</a>
+                    <a href="#" class="footer-link">Italy</a>
+                    <a href="#" class="footer-link">Japan</a>
+                    <a href="#" class="footer-link">South Korea</a>
+                    <a href="#" class="footer-link">India</a>
+                    <a href="#" class="footer-link">China</a>
+                    <a href="#" class="footer-link">Mexico</a>
+                    <a href="#" class="footer-link">Sweden</a>
+                </div>
+            </div>
+            
+            <!-- social icons -->
+            <div class="bottom-footer border-t pt-6 flex flex-wrap justify-between items-center">
+                <div class="bottom-footer-left">
+                    <div class="mb-4 md:mb-0">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p class="text-gray">&copy; 2023 Quizlet, Inc.</p>
+                </div>
+
+                <div class="bottom-footer-right">
+                    <img src="https://placehold.co/200x100" alt="COPPA Certified" class="ml-auto md:ml-0">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Carousel navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.card-carousel');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            // Handle previous button click
+            prevBtn.addEventListener('click', function() {
+                carousel.scrollBy({ left: -300, behavior: 'smooth' });
+            });
+            
+            // Handle next button click
+            nextBtn.addEventListener('click', function() {
+                carousel.scrollBy({ left: 300, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
